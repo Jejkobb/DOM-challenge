@@ -42,7 +42,19 @@ body {
 }
 
 .hovering {
-    box-shadow: 7px 7px 5px #ccc;
-    border: 2px black solid;
-    border-radius: 10px;
+    animation: hovering;
+    animation-duration: 1s;
+}
+
+@keyframes hovering{
+    0% {
+        box-shadow: none;
+        border: none;
+        border-radius: none;
+    }
+    100% {
+        box-shadow: 7px 7px 5px #ccc;
+        border: 2px blue solid;
+        border-radius: 10px;
+    }
 }
